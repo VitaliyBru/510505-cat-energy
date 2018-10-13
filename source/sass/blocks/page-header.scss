@@ -1,0 +1,51 @@
+.page-header__logo-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 66px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.page-header__logo-link {
+  display: block;
+
+  &[href="index.html"]:hover {
+    opacity: 0.8;
+  }
+
+  &[href="index.html"]:active {
+    opacity: 0.6;
+  }
+}
+
+.page-header__logo,
+.page-header__icon-close {
+  display: block;
+}
+
+.page-header__close-btn {
+  display: block;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.page-header__nav-item {
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.page-header__nav-list {
+  @include list-reset;
+}
+
+.page-header__link {
+  @include oswald(20px, 20px, 500, #111111);
+
+  display: block;
+  padding: 22px 20px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
