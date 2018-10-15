@@ -8,7 +8,7 @@
 
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   margin: 27px 0 35px;
   padding-left: 20px;
 
@@ -17,8 +17,8 @@
     content: "";
     flex-grow: 1;
     margin-left: 23px;
-    height: 3px;
-    background-color: $prime-green;
+    height: 17px;
+    border-bottom: 3px solid $prime-green;
   }
 }
 
@@ -40,14 +40,14 @@
 .add-ons__name {
   @include oswald(16px, 16px, 400, #222222);
 
-  margin: 12px 0 10px;
+  margin: 12px 0 13px;
   width: 100%;
   text-transform: uppercase;
 }
 
 .add-ons__vol,
 .add-ons__price {
-  @include arial(13px, 20px, 400, #444444);
+  @include arial(14px, 14px, 400, #444444);
 }
 
 .add-ons__vol {
@@ -62,7 +62,7 @@
   @include oswald(16px, 20px, 400, #ffffff);
 
   display: inline-block;
-  margin-bottom: 17px;
+  margin: 3px 0 17px 0;
   padding: 10px;
   width: 100%;
   text-align: center;
@@ -73,7 +73,7 @@
 
 .add-ons__bonus {
   display: block;
-  margin: 39px 20px 35px;
+  margin: 35px 20px 31px;
   padding: 65px 0 45px;
   background: url("../img/gift-photo-mobile@1x.jpg") no-repeat center;
   text-decoration: none;
@@ -81,7 +81,7 @@
   &::before {
     display: block;
     content: url("../img/icon-gift.svg");
-    margin: 0 auto 65px;
+    margin: 2px auto 63px;
     width: 56px;
     height: 60px;
   }
