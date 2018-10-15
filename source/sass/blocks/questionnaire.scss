@@ -34,8 +34,18 @@
 
   flex-grow: 1;
   margin: -13px 0 0 15px;
-  padding: 11px 13px;
+  padding: 11px 40px 11px 13px;
   text-transform: uppercase;
+  border: 1px solid rgba(#cdcdcd, 0.5);
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &:focus {
+    border-color: #444444;
+    box-shadow: inset 0 0 0 1px #444444;
+  }
 }
 
 .questionnaire__element-type-2 {
@@ -106,6 +116,10 @@
   &--decrease-margin {
     margin-top: 22px;
   }
+}
+
+.questionnaire__icon {
+  margin: 0 23px 0 -35px;
 }
 
 .questionnaire__text-area {
