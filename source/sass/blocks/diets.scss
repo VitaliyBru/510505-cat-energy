@@ -1,0 +1,91 @@
+.diets {
+  margin-bottom: 20px;
+  padding: 20px 20px 0;
+}
+
+.diets__type {
+  position: relative;
+  padding: 1px 0;
+  margin-bottom: 20px;
+  background-color: #f2f2f2;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 20px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: $prime-green;
+    border-radius: 50%;
+  }
+
+  &--slim::after {
+    position: absolute;
+    content: url("../img/icon-cat-slim.svg");
+    top: 18px;
+    left: 30px;
+    width: 35px;
+    height: 49px;
+  }
+
+  &--pro::after {
+    position: absolute;
+    content: url("../img/icon-cat-pro.svg");
+    top: 34px;
+    left: 12px;
+    width: 67px;
+    height: 28px;
+  }
+}
+
+.diets__heading {
+  @include oswald(24px, 37px, 400, #111111);
+
+  margin: 26px auto 18px 93px;
+  width: 165px;
+  text-transform: uppercase;
+}
+
+.diets__description {
+  @include arial(14px, 18px, 400, #444444);
+
+  margin: 18px auto;
+  padding-bottom: 20px;
+  width: 240px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.diets__link {
+  @include oswald(16px, 16px, 400, #111111);
+
+  position: relative;
+  display: inline-block;
+  margin: 2px 20px 22px;
+  padding-right: 37px;
+  max-width: 240px;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &::after {
+    position: absolute;
+    content: url("../img/icon-right-arrow-long.svg");
+    top: -2px;
+    right: 0;
+    width: 24px;
+    height: 15px;
+  }
+
+  &:hover {
+    padding-right: 45px;
+  }
+
+  &:hover::after {
+    content: url("../img/icon-right-arrow-verylong.svg");
+    width: 32px;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

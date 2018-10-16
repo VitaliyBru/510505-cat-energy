@@ -1,0 +1,96 @@
+.add-ons {
+  padding: 1px 0;
+  background-color: #ffffff;
+}
+
+.add-ons__heading {
+  @include oswald(24px, 24px, 400, #111111);
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 27px 0 35px;
+  padding-left: 20px;
+
+  &::after {
+    display: block;
+    content: "";
+    flex-grow: 1;
+    margin-left: 23px;
+    height: 17px;
+    border-bottom: 3px solid $prime-green;
+  }
+}
+
+.add-ons__list {
+  margin: 0 20px;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid #cdcdcd;
+}
+
+.add-ons__item {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding-top: 1px;
+  border-bottom: 1px solid #cdcdcd;
+}
+
+.add-ons__name {
+  @include oswald(16px, 16px, 400, #222222);
+
+  margin: 12px 0 13px;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.add-ons__vol,
+.add-ons__price {
+  @include arial(14px, 14px, 400, #444444);
+}
+
+.add-ons__vol {
+  margin: 0 0 12px 0;
+}
+
+.add-ons__price {
+  margin: 0 0 12px auto;
+}
+
+.add-ons__btn {
+  @include oswald(16px, 20px, 400, #ffffff);
+
+  display: inline-block;
+  margin: 3px 0 17px 0;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: $prime-green;
+}
+
+.add-ons__bonus {
+  display: block;
+  margin: 35px 20px 31px;
+  padding: 65px 0 45px;
+  background: url("../img/gift-photo-mobile@1x.jpg") no-repeat center;
+  text-decoration: none;
+
+  &::before {
+    display: block;
+    content: url("../img/icon-gift.svg");
+    margin: 2px auto 63px;
+    width: 56px;
+    height: 60px;
+  }
+}
+
+.add-ons__offer {
+  @include arial(16px, 20px, 400, #ffffff);
+
+  margin: 0 auto;
+  width: 165px;
+  text-align: center;
+}

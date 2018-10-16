@@ -1,0 +1,206 @@
+.questionnaire {
+  padding: 1px 0;
+  background-color: #ffffff;
+}
+
+.questionnaire__heading {
+  @include oswald(36px, 60px, 400, #111111);
+
+  margin: 14px 20px;
+}
+
+.questionnaire__notice {
+  @include oswald(14px, 18px, 400, #111111);
+
+  margin: 25px 20px 40px;
+  text-transform: uppercase;
+}
+
+.questionnaire__label {
+  @include oswald(16px, 18px, 400, #444444);
+
+  display: flex;
+  margin: 0 20px 13px;
+  padding-top: 13px;
+  text-transform: uppercase;
+}
+
+.questionnaire__label:last-of-type {
+  margin-bottom: 0;
+}
+
+.questionnaire__input {
+  @include oswald(16px, 18px, 400, #444444);
+
+  flex-grow: 1;
+  margin: -13px 0 0 15px;
+  padding: 13px 40px 12px 13px;
+  width: 150px;
+  text-transform: uppercase;
+  border: 1px solid rgba(#cdcdcd, 0.5);
+  outline: none;
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &:focus {
+    border-color: #444444;
+    box-shadow: inset 0 0 0 1px #444444;
+  }
+}
+
+.questionnaire__element-type-2 {
+  margin-top: 24px;
+  padding: 7px 0;
+  border: 1px solid #ededed;
+}
+
+.questionnaire__radio {
+  @include oswald(16px, 18px, 400, #222222);
+
+  position: relative;
+  display: block;
+  margin: 13px 20px;
+  padding: 6px 0 6px 46px;
+  text-transform: uppercase;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -1px;
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff;
+    border: 8px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px #cdcdcd;
+  }
+
+  &:hover::before {
+    box-shadow: 0 0 0 1px #bababa;
+  }
+
+  input:checked + &::before {
+    background-color: $prime-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.questionnaire__element-type-3 {
+  padding: 1px 0;
+}
+
+.questionnaire__group-name {
+  @include oswald(24px, 24px, 400, #111111);
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 27px 0 34px;
+  padding-left: 20px;
+  background-color: #ffffff;
+
+  &::after {
+    content: "";
+    display: block;
+    flex-grow: 1;
+    margin-left: 20px;
+    min-width: 99px;
+    height: 17px;
+    border-bottom: 3px solid $prime-green;
+  }
+
+  &--decrease-margin {
+    margin-top: 22px;
+  }
+}
+
+.questionnaire__icon {
+  fill: #222222;
+
+  &--mail {
+    margin: 3px 16px 0 -33px;
+  }
+
+  &--phone {
+    margin: 0 13px 0 -33px;
+  }
+}
+
+.questionnaire__input:focus + .questionnaire__icon {
+  fill: $prime-green;
+}
+
+.questionnaire__input--invalid + .questionnaire__icon {
+  fill: #ff8282;
+}
+
+.questionnaire__text-area {
+  @include oswald(16px, 18px, 400, #444444);
+
+  margin: 0 20px;
+  padding: 13px;
+  width: 280px;
+  height: 150px;
+  text-transform: uppercase;
+}
+
+.questionnaire__checkbox {
+  @include oswald(16px, 18px, 400, #222222);
+
+  display: block;
+  position: relative;
+  margin: 0 20px 13px;
+  padding: 6px 0 6px 45px;
+  text-transform: uppercase;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #cdcdcd;
+  }
+
+  &:hover::before {
+    border-color: #bababa;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  input:checked + &::after {
+    position: absolute;
+    content: url("../img/icon-tick.svg");
+    top: 7px;
+    left: 5px;
+    width: 21px;
+    height: 16px;
+  }
+}
+
+.questionnaire__submit {
+  @include oswald(16px, 20px, 400, #ffffff);
+
+  margin: 19px 20px 5px;
+  width: 280px;
+  height: 40px;
+  border: none;
+  background-color: $prime-green;
+  text-transform: uppercase;
+}
+
+.questionnaire__lettering-legend {
+  @include arial(14px, 16px, 400, #444444);
+
+  margin: 16px 20px 30px;
+  text-align: center;
+}

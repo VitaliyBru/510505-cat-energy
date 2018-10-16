@@ -1,0 +1,23 @@
+@mixin oswald ($size: 16px, $lineHeight: 20px, $weight: 400, $color: #111111) {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: $size;
+  font-weight: $weight;
+  font-style: normal;
+  line-height: $lineHeight;
+  color: $color;
+}
+
+@mixin arial ($size: 14px, $lineHeight: 18px, $weight: 400, $color: #444444) {
+  font-family: "Arial", sans-serif;
+  font-size: $size;
+  font-weight: $weight;
+  font-style: normal;
+  line-height: $lineHeight;
+  color: $color;
+}
+
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
