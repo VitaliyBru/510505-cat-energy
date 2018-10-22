@@ -23,3 +23,49 @@
   margin: 30px 0 25px;
   width: 140px;
 }
+
+.info__wrap {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .info {
+    padding: 1px 0;
+  }
+
+  .info__dealer {
+    margin: 63px 0 60px 70px;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .info__address {
+    margin: 61px 72px 57px 0;
+    width: 160px;
+    font-size: 16px;
+    text-align: right;
+  }
+
+  .info__wrap {
+    display: inline;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .info {
+    position: relative;
+    width: 570px;
+    margin: 97px 0 -297px 110px;
+    background-color: #ffffff;
+  }
+
+  .info__dealer {
+    margin: 63px 0 60px 75px;
+  }
+
+  .info__address {
+    margin: 61px 65px 57px 0;
+    text-align: left;
+    width: 180px;
+  }
+}

@@ -3,3 +3,19 @@
   background: url("../img/map-pin.png") no-repeat 50% 45%, url("../img/bg-map-mobile@1x.png") no-repeat 50% 98%;
   background-size: 20%, auto;
 }
+
+@media (min-width: $tablet-width) {
+  .map {
+    height: 397px;
+    background: url("../img/map-pin.png") no-repeat 50%, url("../img/bg-map-tablet@1x.png") no-repeat 50% 100%;
+    background-size: 16%, auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map {
+    height: 400px;
+    background: url("../img/map-pin.png") no-repeat 75.9% 51.1%, url("../img/bg-map-desktop@1x.png") no-repeat 50% 0%;
+    background-size: 8.6%, auto;
+  }
+}
