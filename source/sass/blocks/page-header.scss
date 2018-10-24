@@ -24,6 +24,11 @@
   display: block;
 }
 
+.page-header__logo {
+  width: 192px;
+  height: 38px;
+}
+
 .page-header__close-btn {
   display: block;
   padding: 0;
@@ -48,4 +53,122 @@
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 24px;
+  }
+
+  .page-header__logo-container {
+    display: block;
+    margin-left: 30px;
+    padding: 0;
+    height: auto;
+    border: none;
+  }
+
+  .page-header__logo {
+    width: 172px;
+    height: 57px;
+  }
+
+  .page-header__close-btn {
+    display: none;
+  }
+
+  .page-header__nav {
+    width: 550px;
+  }
+
+  .page-header__nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-right: 12px;
+  }
+
+  .page-header__nav-item {
+    margin: 0 19px;
+    border: none;
+  }
+
+  .page-header__link {
+    padding: 18px 0 8px;
+    border-bottom: 2px solid transparent;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.035em;
+
+    &:hover {
+      color: rgba(#111111, 0.6);
+    }
+
+    &:active {
+      color: rgba(#111111, 0.3);
+    }
+
+    &--active {
+      border-color: $prime-green;
+      cursor: default;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    padding-top: 55px;
+  }
+
+  .page-header__logo-container {
+    margin-left: 110px;
+  }
+
+  .page-header__logo {
+    width: 202px;
+    height: 60px;
+  }
+
+  .page-header__nav {
+    width: 50%;
+
+    &--index {
+      margin-top: -55px;
+      padding: 55px 0 570px;
+      min-height: 696px;
+      background: url("../img/index-background-desktop@1x.jpg") no-repeat left top;
+    }
+  }
+
+  .page-header__nav-list {
+    margin-right: 92px;
+  }
+
+  .page-header__nav-item {
+    margin: 0 18px;
+  }
+
+  .page-header__link {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .page-header__nav--index .page-header__link {
+    color: #ffffff;
+
+    &:hover {
+      color: rgba(#ffffff, 0.6);
+    }
+
+    &:active {
+      color: rgba(#ffffff, 0.3);
+    }
+
+    &--active {
+      border-color: #ffffff;
+    }
+  }
 }

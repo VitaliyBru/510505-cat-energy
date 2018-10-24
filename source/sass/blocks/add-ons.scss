@@ -69,6 +69,14 @@
   text-decoration: none;
   text-transform: uppercase;
   background-color: $prime-green;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .add-ons__bonus {
@@ -93,4 +101,157 @@
   margin: 0 auto;
   width: 165px;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .add-ons {
+    margin: 0 0 75px;
+  }
+
+  .add-ons__heading {
+    margin: 8px 0 80px;
+    padding-left: 0;
+    font-size: 36px;
+    line-height: 36px;
+
+    &::before {
+      display: block;
+      content: "";
+      margin-right: 37px;
+      width: 30px;
+      height: 25px;
+      border-bottom: 3px solid $prime-green;
+    }
+
+    &::after {
+      margin-left: 35px;
+      height: 25px;
+    }
+  }
+
+  .add-ons__list {
+    margin: 0 0 70px;
+    border-top: none;
+  }
+
+  .add-ons__item {
+    align-items: flex-end;
+    margin: -1px auto 0;
+    width: 708px;
+    border: 1px solid #cdcdcd;
+  }
+
+  .add-ons__name {
+    margin: 25px 0 13px 40px;
+    width: 315px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .add-ons__vol {
+    margin: 0 0 9px auto;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .add-ons__price {
+    margin: 0 36px 9px 0;
+    width: 95px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+  }
+
+  .add-ons__btn {
+    margin: 13px auto 26px;
+    width: 632px;
+  }
+
+  .add-ons__bonus {
+    display: flex;
+    align-items: center;
+    margin: 0 30px 0;
+    padding: 0;
+    background: url("../img/gift-photo-tablet@1x.jpg") no-repeat center;
+
+    &::before {
+      margin: 64px 0 76px 90px;
+    }
+  }
+
+  .add-ons__offer {
+    margin: 0 120px 0 auto;
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .add-ons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin: 0 0 182px;
+  }
+
+  .add-ons__heading {
+    margin: 13px 0 80px;
+    width: 100%;
+
+    &::before {
+      width: 70px;
+    }
+
+    &::after {
+      margin-left: 40px;
+    }
+  }
+
+  .add-ons__list {
+    margin: 0 40px 0 110px;
+  }
+
+  .add-ons__item {
+    flex-wrap: nowrap;
+    margin: -1px 0 0;
+    width: 895px;
+    border-left: none;
+    border-right: none;
+  }
+
+  .add-ons__name {
+    margin: 25px 0 25px 1px;
+    width: 285px;
+  }
+
+  .add-ons__vol {
+    margin: 0 0 21px 40px;
+  }
+
+  .add-ons__price {
+    margin: 0 0 21px auto;
+    width: 72px;
+    text-align: left;
+  }
+
+  .add-ons__btn {
+    margin: 0 0 15px 10px;
+    width: 244px;
+  }
+
+  .add-ons__bonus {
+    width: 245px;
+    display: block;
+    margin: 0 0 0 40px;
+    background: url("../img/gift-photo-desktop@1x.jpg") no-repeat center;
+    background-size: cover;
+
+    &::before {
+      margin: 65px auto 0;
+    }
+  }
+
+  .add-ons__offer {
+    margin: 61px auto 43px;
+    text-align: center;
+  }
 }
