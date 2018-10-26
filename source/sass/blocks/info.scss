@@ -24,10 +24,6 @@
   width: 140px;
 }
 
-.info__wrap {
-  display: none;
-}
-
 @media (min-width: $tablet-width) {
   .info {
     padding: 1px 0;
@@ -47,7 +43,8 @@
   }
 
   .info__wrap {
-    display: inline;
+    display: inline-block;
+    margin-top: 19px;
   }
 }
 
