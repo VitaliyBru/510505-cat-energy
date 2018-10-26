@@ -83,15 +83,23 @@
   display: block;
   margin: 35px 20px 31px;
   padding: 65px 0 45px;
-  background: url("../img/gift-photo-mobile@1x.jpg") no-repeat center;
+  background: url("../img/gift-photo-mobile@1x.jpg") no-repeat center,
+    $prime-green;
+  background-size: 280px 289px;
   text-decoration: none;
 
   &::before {
     display: block;
-    content: url("../img/icon-gift.svg");
+    content: url("../img/gift.svg");
     margin: 2px auto 63px;
     width: 56px;
     height: 60px;
+  }
+}
+
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .add-ons__bonus {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
   }
 }
 
@@ -142,6 +150,7 @@
   }
 
   .add-ons__name {
+    flex-shrink: 0;
     margin: 25px 0 13px 40px;
     width: 315px;
     font-size: 20px;
@@ -149,12 +158,14 @@
   }
 
   .add-ons__vol {
+    flex-shrink: 0;
     margin: 0 0 9px auto;
     font-size: 16px;
     line-height: 20px;
   }
 
   .add-ons__price {
+    flex-shrink: 0;
     margin: 0 36px 9px 0;
     width: 95px;
     font-size: 16px;
@@ -163,6 +174,7 @@
   }
 
   .add-ons__btn {
+    flex-shrink: 0;
     margin: 13px auto 26px;
     width: 632px;
   }
@@ -172,10 +184,18 @@
     align-items: center;
     margin: 0 30px 0;
     padding: 0;
-    background: url("../img/gift-photo-tablet@1x.jpg") no-repeat center;
+    background: url("../img/gift-photo-tablet@1x.jpg") no-repeat center,
+      $prime-green;
+    background-size: 708px 200px;
 
     &::before {
       margin: 64px 0 76px 90px;
+    }
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .add-ons__bonus {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
     }
   }
 
@@ -242,11 +262,18 @@
     width: 245px;
     display: block;
     margin: 0 0 0 40px;
-    background: url("../img/gift-photo-desktop@1x.jpg") no-repeat center;
+    background: url("../img/gift-photo-desktop@1x.jpg") no-repeat center,
+      $prime-green;
     background-size: cover;
 
     &::before {
       margin: 65px auto 0;
+    }
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .add-ons__bonus {
+      background-image: url("../img/gift-photo-desktop@2x.jpg");
     }
   }
 

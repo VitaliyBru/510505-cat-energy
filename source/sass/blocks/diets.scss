@@ -26,7 +26,7 @@
 
   &--slim::after {
     position: absolute;
-    content: url("../img/icon-cat-slim.svg");
+    content: url("../img/cat-slim.svg");
     top: 18px;
     left: 30px;
     width: 35px;
@@ -35,7 +35,7 @@
 
   &--pro::after {
     position: absolute;
-    content: url("../img/icon-cat-pro.svg");
+    content: url("../img/cat-pro.svg");
     top: 34px;
     left: 12px;
     width: 67px;
@@ -73,7 +73,7 @@
 
   &::after {
     position: absolute;
-    content: url("../img/icon-right-arrow-long.svg");
+    content: url("../img/right-arrow-long.svg");
     top: -2px;
     right: 0;
     width: 24px;
@@ -85,7 +85,7 @@
   }
 
   &:hover::after {
-    content: url("../img/icon-right-arrow-verylong.svg");
+    content: url("../img/right-arrow-verylong.svg");
     width: 32px;
   }
 

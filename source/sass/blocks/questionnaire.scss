@@ -49,6 +49,11 @@
     box-shadow: inset 0 0 0 1px #444444;
   }
 
+  &:invalid {
+    border: 1px solid #ff8282;
+    box-shadow: inset 0 0 0 1px #ff8282;
+  }
+
   &--error {
     border: 1px solid #ff8282;
     box-shadow: inset 0 0 0 1px #ff8282;
@@ -89,6 +94,11 @@
 
   input:checked + &::before {
     background-color: $prime-green;
+  }
+
+  input:focus + &::before {
+    box-shadow: 0 0 0 1px #bababa,
+      0 0 0 3px #87cefa;
   }
 
   &:active {
@@ -186,11 +196,15 @@
 
   input:checked + &::after {
     position: absolute;
-    content: url("../img/icon-tick.svg");
+    content: url("../img/tick.svg");
     top: 7px;
     left: 5px;
     width: 21px;
     height: 16px;
+  }
+
+  input:focus + &::before {
+    box-shadow: 0 0 0 2px #87cefa;
   }
 }
 
@@ -391,7 +405,7 @@
     }
 
     &--phone {
-      margin-left: 79px;
+      margin-right: 110px;
     }
   }
 
@@ -410,6 +424,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
+    justify-content: space-between;
   }
 
   .questionnaire__group-name {
