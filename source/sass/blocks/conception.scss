@@ -24,7 +24,7 @@
 
   &::before {
     position: absolute;
-    padding: 5px;
+    content: "";
     top: 0;
     left: 0;
     width: 60px;
@@ -33,19 +33,63 @@
   }
 
   &--leaf::before {
-    content: url("../img/advantage-leaf@1x.png");
+    background-image: url("../img/advantage-leaf@1x.png");
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+    background-position: 5px 5px;
   }
 
   &--powder::before {
-    content: url("../img/advantage-powder@1x.png");
+    background-image: url("../img/advantage-powder@1x.png");
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+    background-position: 5px 5px;
   }
 
   &--dining::before {
-    content: url("../img/advantage-dining@1x.png");
+    background-image: url("../img/advantage-dining@1x.png");
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+    background-position: 5px 5px;
   }
 
   &--clock::before {
-    content: url("../img/advantage-clock@1x.png");
+    background-image: url("../img/advantage-clock@1x.png");
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+    background-position: 5px 5px;
+  }
+}
+
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .conception__item {
+    &--leaf::before {
+      background-image: url("../img/advantage-leaf@2x.png");
+      background-repeat: no-repeat;
+      background-size: 50px 50px;
+      background-position: 5px 5px;
+    }
+
+    &--powder::before {
+      background-image: url("../img/advantage-powder@2x.png");
+      background-repeat: no-repeat;
+      background-size: 50px 50px;
+      background-position: 5px 5px;
+    }
+
+    &--dining::before {
+      background-image: url("../img/advantage-dining@2x.png");
+      background-repeat: no-repeat;
+      background-size: 50px 50px;
+      background-position: 5px 5px;
+    }
+
+    &--clock::before {
+      background-image: url("../img/advantage-clock@2x.png");
+      background-repeat: no-repeat;
+      background-size: 50px 50px;
+      background-position: 5px 5px;
+    }
   }
 }
 
@@ -77,9 +121,9 @@
     line-height: 24px;
 
     &::before {
-      padding: 15px;
       width: 80px;
       height: 80px;
+      background-position: 15px 15px;
     }
 
     &::after {

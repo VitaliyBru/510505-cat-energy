@@ -19,21 +19,45 @@
   }
 }
 
-.page-header__logo,
-.page-header__icon-close {
-  display: block;
-}
-
 .page-header__logo {
+  display: block;
   width: 192px;
   height: 38px;
 }
 
-.page-header__close-btn {
+.page-header__icon-close {
+  display: none;
+
+  &--on {
+    display: block;
+  }
+}
+
+.page-header__icon-menu {
   display: block;
+
+  &--off {
+    display: none;
+  }
+}
+
+.page-header__btn {
+  display: none;
   padding: 0;
   border: none;
   background-color: transparent;
+
+  &--on {
+    display: block;
+  }
+}
+
+.page-header__nav {
+  display: block;
+
+  &--off {
+    display: none;
+  }
 }
 
 .page-header__nav-item {
@@ -76,11 +100,12 @@
     height: 57px;
   }
 
-  .page-header__close-btn {
+  .page-header__btn {
     display: none;
   }
 
   .page-header__nav {
+    display: block;
     width: 550px;
   }
 
@@ -133,13 +158,23 @@
   }
 
   .page-header__nav {
+    display: block;
     width: 50%;
 
     &--index {
       margin-top: -55px;
       padding: 55px 0 570px;
       min-height: 696px;
-      background: url("../img/index-background-desktop@1x.jpg") no-repeat left top;
+      background: url("../img/index-background-desktop@1x.jpg") no-repeat left top,
+        $prime-green;
+    }
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .page-header__nav--index {
+      background: url("../img/index-background-desktop@2x.jpg") no-repeat left top,
+        $prime-green;
+      background-size: 720px 696px;
     }
   }
 
