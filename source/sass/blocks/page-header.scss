@@ -10,6 +10,7 @@
 .page-header__logo-link {
   display: block;
 
+  &[href="index.html"]:focus,
   &[href="index.html"]:hover {
     opacity: 0.8;
   }
@@ -128,6 +129,7 @@
     line-height: 24px;
     letter-spacing: -0.035em;
 
+    &:focus,
     &:hover {
       color: rgba(#111111, 0.6);
     }
@@ -194,6 +196,7 @@
   .page-header__nav--index .page-header__link {
     color: #ffffff;
 
+    &:focus,
     &:hover {
       color: rgba(#ffffff, 0.6);
     }

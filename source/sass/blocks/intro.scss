@@ -2,7 +2,7 @@
   padding: 1px 0;
   min-height: 305px;
   text-align: center;
-  background: url("../img/index-can-mobile@1x.png") no-repeat center bottom 40px,
+  background: url("../img/index-can-mobile@1x.png") no-repeat center bottom 47px,
     url("../img/index-background-mobile@1x.jpg") no-repeat 50% top,
     linear-gradient(to bottom, #65a93c 305px, #ffffff 305px) no-repeat;
   background-size: 280px 271px, 320px 305px;
@@ -10,7 +10,7 @@
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .intro {
-    background: url("../img/index-can-mobile@2x.png") no-repeat center bottom 40px,
+    background: url("../img/index-can-mobile@2x.png") no-repeat center bottom 47px,
       url("../img/index-background-mobile@2x.jpg") no-repeat 50% top,
       linear-gradient(to bottom, #65a93c 305px, #ffffff 305px) no-repeat;
     background-size: 280px 271px, 320px 305px;
@@ -20,7 +20,7 @@
 .intro__heading {
   @include oswald(36px, 36px, 400, #ffffff);
 
-  margin: 29px auto;
+  margin: 27px auto 25px;
   width: 280px;
   text-align: center;
 }
@@ -28,7 +28,7 @@
 .intro__text {
   @include oswald(14px, 14px, 400, #ffffff);
 
-  margin: 29px auto 304px;
+  margin: 25px auto 302px;
   width: 280px;
   text-align: center;
   text-transform: uppercase;
@@ -38,6 +38,7 @@
   @include oswald(14px, 18px, 400, #ffffff);
 
   display: inline-block;
+  margin-bottom: 3px;
   padding: 11px;
   width: 280px;
   background-color: $prime-green;
@@ -45,6 +46,7 @@
   text-transform: uppercase;
   text-decoration: none;
 
+  &:focus,
   &:hover {
     background-color: #5eaa2f;
   }

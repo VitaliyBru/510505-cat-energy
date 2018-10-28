@@ -12,7 +12,7 @@
 .info__dealer {
   @include oswald(16px, 20px, 400, #111111);
 
-  margin: 30px 0 25px;
+  margin: 28px 0 25px;
   width: 140px;
   text-transform: uppercase;
 }
@@ -20,7 +20,7 @@
 .info__address {
   @include arial(14px, 20px, 400, #444444);
 
-  margin: 30px 0 25px;
+  margin: 28px 0 25px;
   width: 140px;
 }
 
