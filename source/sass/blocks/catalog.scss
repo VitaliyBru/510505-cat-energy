@@ -39,9 +39,11 @@
 }
 
 .catalog__card-column {
+  display: block;
   margin-top: -1px;
   padding-top: 1px;
   width: 140px;
+  text-decoration: none;
 }
 
 .catalog__image {
@@ -56,6 +58,11 @@
   margin: 20px 0 15px;
   width: 100px;
   text-transform: uppercase;
+}
+
+.catalog__link {
+  color: #111111;
+  text-decoration: none;
 }
 
 .catalog__item-property {
