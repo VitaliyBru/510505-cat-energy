@@ -13,6 +13,7 @@
   display: inline-block;
   margin: 38px 0 27px;
 
+  &:focus,
   &:hover {
     opacity: 0.8;
   }
@@ -23,8 +24,8 @@
 }
 
 .page-footer__logo-icon {
-  width: 127px;
-  height: 23px;
+  width: 128px;
+  height: 24px;
 }
 
 .page-footer__social-list {
@@ -44,6 +45,10 @@
 .page-footer__social-link {
   display: block;
   font-size: 0;
+
+  &:focus .page-footer__social-icon {
+    fill: $prime-green;
+  }
 }
 
 .page-footer__social-icon {
@@ -76,10 +81,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 21px 20px;
+  margin: 18px 20px 22px;
   height: 34px;
   text-decoration: none;
 
+  &:focus,
   &:hover {
     fill: $prime-green;
   }

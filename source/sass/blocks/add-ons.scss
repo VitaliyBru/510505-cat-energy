@@ -81,8 +81,8 @@
 
 .add-ons__bonus {
   display: block;
-  margin: 35px 20px 31px;
-  padding: 65px 0 45px;
+  margin: 38px 20px 34px;
+  padding: 65px 0 42px;
   background: url("../img/gift-photo-mobile@1x.jpg") no-repeat center,
     $prime-green;
   background-size: 280px 289px;
@@ -91,7 +91,7 @@
   &::before {
     display: block;
     content: url("../img/gift.svg");
-    margin: 2px auto 63px;
+    margin: 0 auto 62px;
     width: 56px;
     height: 60px;
   }

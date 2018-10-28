@@ -1,6 +1,6 @@
 .diets {
-  margin-bottom: 20px;
-  padding: 20px 20px 0;
+  margin-bottom: 16px;
+  padding: 18px 20px 0;
 }
 
 .diets__type {
@@ -16,8 +16,8 @@
   &::before {
     position: absolute;
     content: "";
-    top: 20px;
-    left: 20px;
+    top: 23px;
+    left: 22px;
     width: 50px;
     height: 50px;
     background-color: $prime-green;
@@ -27,7 +27,7 @@
   &--slim::after {
     position: absolute;
     content: url("../img/cat-slim.svg");
-    top: 18px;
+    top: 21px;
     left: 30px;
     width: 35px;
     height: 49px;
@@ -46,7 +46,7 @@
 .diets__heading {
   @include oswald(24px, 37px, 400, #111111);
 
-  margin: 26px auto 18px 93px;
+  margin: 27px auto 31px 93px;
   width: 165px;
   text-transform: uppercase;
 }
@@ -80,10 +80,12 @@
     height: 15px;
   }
 
+  &:focus,
   &:hover {
     padding-right: 45px;
   }
 
+  &:focus::after,
   &:hover::after {
     content: url("../img/right-arrow-verylong.svg");
     width: 32px;
@@ -153,6 +155,7 @@
     font-size: 20px;
     line-height: 20px;
 
+    &:focus,
     &:hover {
       padding-right: 55px;
     }
