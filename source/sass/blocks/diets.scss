@@ -165,6 +165,7 @@
 @media (min-width: $desktop-width) {
   .diets {
     display: flex;
+    flex-wrap: wrap;
     margin: 0 auto 73px;
     padding: 0;
     width: 1300px;
@@ -196,6 +197,10 @@
       right: auto;
       width: 134px;
       height: 56px;
+    }
+
+    &:nth-child(n + 3) {
+      margin-top: 40px;
     }
   }
 
